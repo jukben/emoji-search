@@ -1,7 +1,7 @@
 {
   "name": "@jukben/emoji-search",
   "version": "1.0.0",
-  "description": "Offers autocomplete over textarea in style of GitHub.",
+  "description": "Retrieve emojis based on the search term.",
   "repository": {
     "type": "git",
     "url": "https://github.com/jukben/emoji-search"
@@ -21,7 +21,7 @@
     "test": "jest",
     "build": "babel src/index.js -o lib/index.js",
     "dev": "npm run build -- -w",
-    "prepublish": "npm run test"
+    "prepare": "npm run test"
   },
   "dependencies": {
     "emojilib": "2.2.9",

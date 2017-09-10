@@ -21,7 +21,7 @@
     "test": "jest",
     "build": "babel src/index.js -o lib/index.js",
     "dev": "npm run build -- -w",
-    "prepare": "npm run test"
+    "prepare": "npm run build"
   },
   "dependencies": {
     "emojilib": "2.2.9",

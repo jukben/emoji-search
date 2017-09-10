@@ -4,10 +4,11 @@ Exposes search function which returns arrays of related emojis:
 
 ```javascript 
 type Emoji = {
-    keywords: Array<string>,
+    category: string
     char: string,
     fitzpatrick_scale: boolean
-    category: string
+    keywords: Array<string>,
+    name: string,
 }
 
 (string) => Array<Emoji>
@@ -23,7 +24,7 @@ Based on [emojilib](https://github.com/muan/emojilib) and wonderful [match-sorte
 ```javascript
 import search from "@jukben/emoji-search"
 
-search("beer") // [{"keywords":["relax","beverage","drink","drunk","party","pub","summer","alcohol","booze","beer"],"char":"🍺","fitzpatrick_scale":false,"category":"food_and_drink"},{"keywords":["relax","beverage","drink","drunk","party","pub","summer","alcohol","booze","beers"],"char":"🍻","fitzpatrick_scale":false,"category":"food_and_drink"},{"keywords":["beverage","drink","cow","milk_glass"],"char":"🥛","fitzpatrick_scale":false,"category":"food_and_drink"},...
+search("beer") // [{"keywords":["beer", "relax","beverage","drink","drunk","party","pub","summer","alcohol","booze"],"char":"🍺","fitzpatrick_scale":false,"category":"food_and_drink", name: "beer"},{"keywords":["beers", "relax","beverage","drink","drunk","party","pub","summer","alcohol","booze"],"char":"🍻","fitzpatrick_scale":false,"category":"food_and_drink", name: beers"},{"keywords":["milk_glass", "beverage","drink","cow"],"char":"🥛","fitzpatrick_scale":false,"category":"food_and_drink", name: "milk_glass"},...
 
 search("beer")[0].char // 🍺
 ```

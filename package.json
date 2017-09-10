@@ -1,6 +1,6 @@
 {
   "name": "@jukben/emoji-search",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Retrieve emojis based on the search term.",
   "repository": {
     "type": "git",

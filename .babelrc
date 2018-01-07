@@ -9,5 +9,5 @@
       }
     ]
   ],
-  "plugins": ["transform-object-rest-spread", "transform-object-entries"]
+  "plugins": ["transform-object-rest-spread", "transform-object-entries", "transform-runtime"]
 }

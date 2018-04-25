@@ -13,10 +13,7 @@
     "url": "https://github.com/jukben/emoji-search/issues"
   },
   "homepage": "https://github.com/jukben/emoji-search",
-  "keywords": [
-    "emoji",
-    "search"
-  ],
+  "keywords": ["emoji", "search"],
   "scripts": {
     "test": "jest",
     "build": "babel src/index.js -o lib/index.js",
@@ -25,8 +22,8 @@
   },
   "dependencies": {
     "babel-runtime": "^6.26.0",
-    "emojilib": "2.2.9",
-    "match-sorter": "1.8.1"
+    "emojilib": "^2.2.12",
+    "match-sorter": "^2.2.1"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",

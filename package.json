@@ -7,7 +7,11 @@
     "url": "https://github.com/jukben/emoji-search"
   },
   "author": "Jakub Benes <jukben@gmail.com>",
-  "main": "lib/index.js",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "LICENSE"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jukben/emoji-search/issues"
@@ -19,21 +23,26 @@
   ],
   "scripts": {
     "test": "jest",
-    "build": "babel src/index.js -o lib/index.js",
+    "build": "babel src/index.js -o index.js",
     "dev": "npm run build -- -w",
     "prepare": "npm run build"
   },
+  "jest": {
+    "testEnvironment": "node"
+  },
   "dependencies": {
     "emojilib": "2.3.0",
-    "match-sorter": "2.2.3"
+    "match-sorter": "2.2.3",
+    "babel-runtime": "6.26.0"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
     "babel-core": "6.26.3",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "babel-plugin-transform-object-entries": "^1.0.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "1.7.0",
-    "jest": "21.0.2"
+    "jest": "23.4.2"
   }
 }

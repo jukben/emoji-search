@@ -1,13 +1,13 @@
-import emojiSearch from './index';
+const emojiSearch = require("./index.js");
 
 it('match match the snapshot of the "beer"', () => {
-  expect(emojiSearch('beer')).toMatchSnapshot();
+  expect(emojiSearch("beer")).toMatchSnapshot();
 });
 
 it('match match the snapshot of the "v"', () => {
-  expect(emojiSearch('v')).toMatchSnapshot();
+  expect(emojiSearch("v")).toMatchSnapshot();
 });
 
-it('should return empty array', () => {
-  expect(emojiSearch('nothing here')).toEqual([]);
+it("should return empty array", () => {
+  expect(emojiSearch("nothing here")).toEqual([]);
 });

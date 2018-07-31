@@ -24,17 +24,16 @@
     "prepare": "npm run build"
   },
   "dependencies": {
-    "babel-runtime": "^6.26.0",
-    "emojilib": "^2.2.12",
-    "match-sorter": "^2.2.1"
+    "emojilib": "2.3.0",
+    "match-sorter": "2.2.3"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
-    "babel-core": "6.26.0",
+    "babel-core": "6.26.3",
     "babel-plugin-transform-object-entries": "^1.0.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "1.6.1",
+    "babel-preset-env": "1.7.0",
     "jest": "21.0.2"
   }
 }

@@ -62,6 +62,9 @@ Array [
       "alcohol",
       "celebrate",
       "cheers",
+      "wine",
+      "champagne",
+      "toast",
     ],
     "name": "clinking_glasses",
   },
@@ -158,19 +161,6 @@ Array [
       "booze",
     ],
     "name": "sake",
-  },
-  Object {
-    "category": "_custom",
-    "char": null,
-    "fitzpatrick_scale": false,
-    "keywords": Array [
-      "goberserk",
-      "doom",
-      "rage",
-      "bloody",
-      "hurt",
-    ],
-    "name": "goberserk",
   },
   Object {
     "category": "symbols",
@@ -917,7 +907,7 @@ Array [
   Object {
     "category": "people",
     "char": "💏",
-    "fitzpatrick_scale": true,
+    "fitzpatrick_scale": false,
     "keywords": Array [
       "couplekiss_man_woman",
       "pair",
@@ -1982,7 +1972,7 @@ Array [
   Object {
     "category": "people",
     "char": "💑",
-    "fitzpatrick_scale": true,
+    "fitzpatrick_scale": false,
     "keywords": Array [
       "couple_with_heart_woman_man",
       "pair",
@@ -2033,7 +2023,7 @@ Array [
   Object {
     "category": "people",
     "char": "👫",
-    "fitzpatrick_scale": true,
+    "fitzpatrick_scale": false,
     "keywords": Array [
       "couple",
       "pair",
@@ -3001,6 +2991,9 @@ Array [
       "alcohol",
       "celebrate",
       "cheers",
+      "wine",
+      "champagne",
+      "toast",
     ],
     "name": "clinking_glasses",
   },
@@ -3596,21 +3589,6 @@ Array [
     "name": "arrow_left",
   },
   Object {
-    "category": "_custom",
-    "char": null,
-    "fitzpatrick_scale": false,
-    "keywords": Array [
-      "shipit",
-      "squirrel",
-      "detective",
-      "animal",
-      "sherlock",
-      "inspector",
-      "custom_",
-    ],
-    "name": "shipit",
-  },
-  Object {
     "category": "people",
     "char": "😇",
     "fitzpatrick_scale": false,
@@ -3681,7 +3659,7 @@ Array [
   Object {
     "category": "people",
     "char": "👬",
-    "fitzpatrick_scale": true,
+    "fitzpatrick_scale": false,
     "keywords": Array [
       "two_men_holding_hands",
       "pair",
@@ -3868,7 +3846,7 @@ Array [
   Object {
     "category": "people",
     "char": "👭",
-    "fitzpatrick_scale": true,
+    "fitzpatrick_scale": false,
     "keywords": Array [
       "two_women_holding_hands",
       "pair",

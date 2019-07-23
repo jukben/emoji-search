@@ -7,9 +7,9 @@
     "url": "https://github.com/jukben/emoji-search"
   },
   "author": "Jakub Benes <jukben@gmail.com>",
-  "main": "index.js",
+  "main": "build/index.js",
   "files": [
-    "index.js",
+    "build",
     "LICENSE"
   ],
   "license": "MIT",
@@ -23,26 +23,22 @@
   ],
   "scripts": {
     "test": "jest",
-    "build": "babel src/index.js -o index.js",
-    "dev": "npm run build -- -w",
+    "build": "tsc",
     "prepare": "npm run build"
   },
-  "jest": {
-    "testEnvironment": "node"
-  },
   "dependencies": {
-    "babel-runtime": "6.26.0",
-    "emojilib": "2.3.0",
-    "match-sorter": "2.2.3"
+    "emojilib": "2.4.0",
+    "match-sorter": "4.0.0"
   },
   "devDependencies": {
-    "babel-cli": "6.26.0",
-    "babel-core": "6.26.3",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
-    "babel-plugin-transform-object-entries": "^1.0.0",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "1.7.0",
-    "jest": "23.4.2"
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-typescript": "^7.3.3",
+    "@babel/runtime": "^7.5.5",
+    "@types/jest": "^24.0.15",
+    "@types/match-sorter": "^2.3.0",
+    "babel-jest": "^24.8.0",
+    "jest": "24.8.0",
+    "typescript": "3.5.3"
   }
 }

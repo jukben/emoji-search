@@ -1,4 +1,4 @@
-import emojiSearch from "./index";
+import emojiSearch from "../index";
 
 it('match match the snapshot of the "beer"', () => {
   expect(emojiSearch("beer")).toMatchSnapshot();

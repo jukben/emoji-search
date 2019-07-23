@@ -1,6 +1,6 @@
 {
   "name": "@jukben/emoji-search",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Retrieve emojis based on the search term.",
   "repository": {
     "type": "git",
@@ -27,9 +27,9 @@
     "prepare": "npm run build"
   },
   "dependencies": {
+    "@babel/runtime": "7.5.5",
     "emojilib": "2.4.0",
-    "match-sorter": "4.0.0",
-    "@babel/runtime": "7.5.5"
+    "match-sorter": "4.0.0"
   },
   "devDependencies": {
     "@babel/core": "7.5.5",

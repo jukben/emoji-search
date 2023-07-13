@@ -1,6 +1,6 @@
 {
   "name": "@jukben/emoji-search",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Retrieve emojis based on the search term.",
   "repository": {
     "type": "git",
@@ -24,21 +24,15 @@
   "scripts": {
     "test": "jest",
     "build": "tsc",
-    "prepare": "npm run build"
+    "prepare": "yarn run build"
   },
   "dependencies": {
-    "@babel/runtime": "7.5.5",
-    "emojilib": "2.4.0",
-    "match-sorter": "4.0.0"
+    "emojilib": "^3.0.10",
+    "match-sorter": "^6.3.1"
   },
   "devDependencies": {
-    "@babel/core": "7.5.5",
-    "@babel/preset-env": "7.5.5",
-    "@babel/preset-typescript": "7.3.3",
     "@types/jest": "24.0.15",
-    "@types/match-sorter": "2.3.0",
-    "babel-jest": "24.8.0",
     "jest": "24.8.0",
-    "typescript": "3.5.3"
+    "typescript": "^5.1.6"
   }
 }

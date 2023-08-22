@@ -1,5 +1,5 @@
 import { lib } from "emojilib";
-import matchSorter from "match-sorter";
+import { matchSorter } from "match-sorter";
 
 /* build proper library with included name of the emoji */
 const library = Object.entries(lib).map(([name, emojiObject]) => ({

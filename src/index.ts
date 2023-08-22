@@ -1,12 +1,16 @@
-import { lib } from "emojilib";
+import lib from "emojilib";
 import { matchSorter } from "match-sorter";
 
 /* build proper library with included name of the emoji */
-const library = Object.entries(lib).map(([name, emojiObject]) => ({
-  ...emojiObject,
-  keywords: [name, ...emojiObject.keywords],
-  name
-}));
+const library = Object.entries(lib).map(([name, emojiObject]) => {
+  return {
+    keywords: [name, ...emojiObject],
+    name,
+  };
+});
 
-export default (key: string) =>
-  matchSorter(library, key, { keys: ["keywords"] });
+function searchEmoji(key: string) {
+  return matchSorter(library, key, { keys: ["keywords"] });
+}
+
+export default searchEmoji;

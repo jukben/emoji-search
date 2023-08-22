@@ -1,12 +1,8 @@
 type EmojiShape = {
-  [key: string]: {
-    keywords: Array<string>;
-    char: string;
-    fitzpatrick_scale: boolean;
-    category: string;
-  };
+  [key: string]: Array<string>;
 };
 
 declare module "emojilib" {
   const lib: EmojiShape;
+  export default lib;
 }

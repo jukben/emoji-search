@@ -1,6 +1,6 @@
 {
   "name": "@jukben/emoji-search",
-  "version": "2.0.2",
+  "version": "2.0.1",
   "description": "Retrieve emojis based on the search term.",
   "repository": {
     "type": "git",
@@ -23,8 +23,7 @@
   ],
   "scripts": {
     "test": "jest",
-    "build": "tsc",
-    "prepare": "yarn run build"
+    "build": "tsc"
   },
   "dependencies": {
     "emojilib": "^3.0.10",
@@ -32,6 +31,8 @@
   },
   "devDependencies": {
     "@types/jest": "24.0.15",
+    "esbuild": "^0.19.2",
+    "esbuild-jest": "^0.5.0",
     "jest": "24.8.0",
     "typescript": "^5.1.6"
   }
